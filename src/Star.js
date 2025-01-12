@@ -26,6 +26,7 @@ const StarComponent = function StarComponent(props) {
 };
 const comparison = (prevProps, nextProps) => {
   return (
+    //if id, left and top are the same we're not render the star comonent.
     prevProps.Star.id === nextProps.Star.id &&
     prevProps.Star.position.left === nextProps.Star.position.left &&
     prevProps.Star.position.top === nextProps.Star.position.top
